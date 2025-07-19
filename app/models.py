@@ -1,28 +1,4 @@
-# from pydantic import BaseModel
-# from typing import List, Optional
 
-# # Products
-# # class ProductRequest(BaseModel):
-# #     name: str
-# #     description: Optional[str]
-# #     price: float
-# #     size: Optional[str]
-
-# # class ProductResponse(ProductRequest):
-# #     id: str
-
-# class SizeEntry(BaseModel):
-#     size: str
-#     quantity: int
-
-# # ✅ Request model for creating a product
-# class ProductRequest(BaseModel):
-#     name: str
-#     price: float
-#     sizes: List[SizeEntry]
-
-# # ✅ Response model after inserting into DB
-# class ProductResponse(ProductRequest):
 #     id: str
 
 # # Orders
@@ -37,16 +13,15 @@
 from pydantic import BaseModel
 from typing import List, Optional
 
-# -------------------------
 # Size Entry for Products
-# -------------------------
+
 class SizeEntry(BaseModel):
     size: str
     quantity: int
 
-# -------------------------
+
 # Product Models
-# -------------------------
+
 class ProductRequest(BaseModel):
     name: str
     price: float
@@ -57,9 +32,9 @@ class ProductResponse(BaseModel):
     name: str
     price: float
 
-# -------------------------
+
 # Order Models
-# -------------------------
+
 class OrderItem(BaseModel):
     product_id: str
     qty: int
