@@ -11,8 +11,8 @@ This is a backend API integration project in Python for an E-Commerce applicatio
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/yourusername/ecommerce-backend.git
-cd ecommerce-backend
+git clone https://github.com/Satyamkus/ECommerce_Backend_Python.git
+cd ECommerce_Backend_Python
 
 ```
 ### 2. Create Virtual Environment
